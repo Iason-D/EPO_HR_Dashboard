@@ -6,4 +6,10 @@
 The reports are in PDF format and the data in question are in the form of tables in the PDF files. 
 In order to extract the data, I used the pdftools R package, which converts PDFs to vectors. I then wrote a number of functions, catering to the various tables whose data I wanted to scrape. 
 
-Following data scraping, cleaning and manipulation, I created 13 interactive visualizations using plotly and compiled everything into a simple Shiny dashboard
+Following data scraping, cleaning and manipulation, I created 13 interactive visualizations using plotly and compiled everything into a simple Shiny dashboard. 
+
+You can look at the dashboard byt running the following command in your R environment:
+
+library(shiny)
+
+runGitHub(repo = "EPO_HR_dashboard", username = "Iason-D", ref = "main")
